@@ -1,11 +1,15 @@
 import React from "react";
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
+import { HomePage } from "./HomePage";
 
 export const App = () => {
     return (
-        <h1> Testing React Code! </h1>
+        <div>
+            <HomePage/>
+        </div>
     )
 }
 
 const appDiv = document.getElementById("app");
-render(<App/>, appDiv)
+const root = createRoot(appDiv)
+root.render(<App />)
