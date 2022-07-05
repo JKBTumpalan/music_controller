@@ -16,6 +16,7 @@ export const HomePage = () => {
                 <Route exact path='/'>This is the home page.</Route>
                 <Route path='/join' element={<JoinRoomPage/>} />
                 <Route path='/create' element={<CreateRoomPage/>} />
+                <Route path='/room/:roomCode' element ={<Room />} />
             </Routes>
         </Router>
     )
